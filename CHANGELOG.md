@@ -1,6 +1,9 @@
-# Change Log
+# Change Log for XCode Flutter Color Debugging Extension (xcodefluttercolordebugging)
 
-All notable changes to the "xcodefluttercolordebugging" extension will be documented in this file.
+## [1.0.3]
+
+- Improve icon
+- package.json tuning: add bugs, badges sections, and fix galleryBanner, change activationEvents to only "onDebug"
 
 ## [1.0.2]
 
