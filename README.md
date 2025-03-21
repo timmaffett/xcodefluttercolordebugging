@@ -21,7 +21,6 @@ proper colors/styles appropriately.
 
 \!\[Broken debug console messages via XCode without this extension\]\(assets/without_xcodefluttercolordebugging.png\)
 
-
 This extension allows you to enjoy the power of colorized and styled debug logging from your Flutter app running or debugged from within VSCode via XCode.
 
 ## Requirements
