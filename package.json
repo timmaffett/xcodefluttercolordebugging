@@ -1,0 +1,99 @@
+{
+  "name": "xcodefluttercolordebugging",
+  "displayName": "XCode Flutter Color Debugging",
+  "description": "Adds ansi color support for debugging Flutter apps within VSCode via XCode.  The [ChalkDart pub.dev package](https://pub.dev/packages/chalkdart) must be used in conjunction with this for coloring your console print/debugPrint messages.",
+  "version": "0.0.1",
+  "publisher": "HiveRight",
+  "icon": "assets/xcfcd_vscode_extension_icon.png",
+  "pricing": "Free",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timmaffett/xcodefluttercolordebugging"
+  },
+  "homepage": "https://github.com/timmaffett/xcodefluttercolordebugging/",
+  "galleryBanner.color": {
+    "color": "#21214c",
+    "theme" : "dark"
+  },
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+	"categories": [
+		"Programming Languages",
+		"Debugging",
+		"Console",
+    "Debug Console",
+		"Debuggers",
+    "XCode"
+	],
+	"keywords": [
+		"flutter",
+		"dart",
+		"mobile",
+    "mac",
+    "darwin",
+    "osx",
+		"ios",
+    "color",
+    "ansi",
+    "logging",
+    "console",
+    "debugging",
+    "xcode"
+	],
+  "activationEvents": [
+		"workspaceContains:pubspec.yaml",
+		"workspaceContains:*/pubspec.yaml",
+		"workspaceContains:*/*/pubspec.yaml",
+		"workspaceContains:*.dart",
+		"workspaceContains:*/*.dart",
+		"workspaceContains:*/*/*.dart",
+		"workspaceContains:dart.sh.create",
+		"workspaceContains:dart.create",
+		"workspaceContains:flutter.sh.create",
+		"workspaceContains:flutter.create",
+		"onCommand:_dart.flutter.createSampleProject",
+		"onTaskType:dart",
+		"onTaskType:flutter",
+		"onUri",
+		"onDebugDynamicConfigurations"
+	],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "xcodefluttercolordebugging.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.98.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+		"@vscode/debugadapter-testsupport": "^1.68.0",
+    "eslint": "^9.21.0",
+    "esbuild": "^0.25.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.7.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
