@@ -5,21 +5,15 @@ This extension adds support for using ANSI escape sequences from a Flutter appli
 XCode normally strips all ESC sequences from messages, and additionally truncates any messages
 where ESC sequences are found, which makes using ANSI styled output from within XCode impossible.
 
-This extension only activates itself on the Mac OSX platform and does absolutely nothing on any other platforms.
-
-This extension looks for the string `[^ESC]` within messages sent to the debug console and replaces the string with a proper ASCII ESC 27 (\u001B)
-character so that the debug console is able to format the message with the
-proper colors/styles appropriately.
-
 ## Features
 
 > With this extension installed and the use of the [ChalkDart](https://pub.dev/packages/chalkdart) you can enjoy full color messages/console logging from within your Flutter app, EVEN when debugging via XCode.
 
-\!\[Color debug console messages via XCode WITH this extension\]\(assets/with_xcodefluttercolordebugging.png\)
+![Color debug console messages via XCode WITH this extension](https://raw.githubusercontent.com/timmaffett/xcodefluttercolordebugging/refs/heads/main/assets/with_xcodefluttercolordebugging.png)
 
 > When debugging a Flutter app via XCode WITHOUT this extension you would just see something like the following, raw broken ansi sequences AND *truncated* messages, anytime you attempt to output color:
 
-\!\[Broken debug console messages via XCode without this extension\]\(assets/without_xcodefluttercolordebugging.png\)
+![Broken debug console messages via XCode without this extension](https://raw.githubusercontent.com/timmaffett/xcodefluttercolordebugging/refs/heads/main/assets/without_xcodefluttercolordebugging.png)
 
 This extension allows you to enjoy the power of colorized and styled debug logging from your Flutter app running or debugged from within VSCode via XCode.
 
@@ -53,6 +47,14 @@ void main() {
 You will find the complete range of all the possible stylings available using Chalk Dart within the documentation for [Dart/Flutter ChalkDart package](https://pub.dev/packages/chalkdart) at [https://pub.dev/packages/chalkdart](https://pub.dev/packages/chalkdart)
 
 I have been meaning to create this extension for several years, since I added the PR to VSCode to completely support the entire set of ANSI styling ESC sequences.   Sorry it took so long! 😆 :laughing:
+
+## Details
+
+This extension only activates itself on the Mac OSX platform and does absolutely nothing on any other platforms.
+
+This extension looks for the string `[^ESC]` within messages sent to the debug console and replaces the string with a proper ASCII ESC 27 (\u001B)
+character so that the debug console is able to format the message with the
+proper colors/styles appropriately.
 
 ## Release Notes
 
