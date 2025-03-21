@@ -1,5 +1,10 @@
 # Change Log for XCode Flutter Color Debugging Extension (xcodefluttercolordebugging)
 
+## [1.0.4]
+
+- Switch gallerBanner to theme "dark" because it does not refer to the text color as I understood, but instead it
+  describes the background color. (so "dark" will make the text white, which is was I was going for.. lol)
+
 ## [1.0.3]
 
 - Improve icon
