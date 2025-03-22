@@ -21,7 +21,7 @@ This extension allows you to enjoy the power of colorized and styled printing fr
 ## Requirements
 
 The [Dart/Flutter ChalkDart package](https://pub.dev/packages/chalkdart) is required to output the expected ANSI escape sequences which this extension expects.
-The only additional code that needs to be added is setting `Chalk.xcodeSafeEsc=true` at the beginning of your main() function
+The only additional code that needs to be added is setting `Chalk.xcodeSafeEsc=true;` at the beginning of your main() function
 to activate the XCode safe ESC mode within the ChalkDart package.
 
 Once that is done ChalkDart will output the properly encoded escape sequences and this VSCode extension will automatically convert the encoded escape

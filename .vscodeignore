@@ -5,6 +5,7 @@ node_modules/**
 src/**
 media/**
 assets/with*.webp
+assets/*.png
 .gitignore
 .yarnrc
 esbuild.js
