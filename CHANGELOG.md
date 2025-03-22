@@ -1,5 +1,9 @@
 # Change Log for XCode Flutter Color Debugging Extension (xcodefluttercolordebugging)
 
+## [1.0.7]
+
+- Exclude assets/*.png from distribution
+
 ## [1.0.6]
 
 - Add the assets directory to .vscodeignore so the image files are excluded entirely from the extension distribution.  The
