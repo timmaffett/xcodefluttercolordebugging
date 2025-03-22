@@ -1,8 +1,13 @@
 # Change Log for XCode Flutter Color Debugging Extension (xcodefluttercolordebugging)
 
+## [1.0.5]
+
+- Revert back to my original package.json activationEvents - I didn't think through "onDebug" only all the way
+  as the extension does not get invoked when running without debugging.
+
 ## [1.0.4]
 
-- Switch gallerBanner to theme "dark" because it does not refer to the text color as I understood, but instead it
+- Switch galleryBanner to theme "dark" because it does not refer to the text color as I understood, but instead it
   describes the background color. (so "dark" will make the text white, which is was I was going for.. lol)
 
 ## [1.0.3]

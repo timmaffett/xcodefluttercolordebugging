@@ -60,6 +60,6 @@ proper colors/styles appropriately.
 
 Users appreciate release notes as you update your extension.
 
-### 1.0.0 - 1.0.4
+### 1.0.0 - 1.0.5
 
 Initial releases of XCode Flutter Color Debugging - Identical source, only differences in package.json and README

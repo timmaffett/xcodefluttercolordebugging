@@ -2,7 +2,7 @@
   "name": "xcodefluttercolordebugging",
   "displayName": "XCode Flutter Color Debugging",
   "description": "Adds ansi color support for debugging Flutter apps within VSCode via XCode.  The ChalkDart pub.dev package at https://pub.dev/packages/chalkdart must be used in conjunction with this extension for coloring your console print/debugPrint messages.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "HiveRight",
   "icon": "assets/xcfcd_vscode_extension_icon.png",
   "pricing": "Free",
@@ -50,7 +50,21 @@
     "xcode"
 	],
   "activationEvents": [
-		"onDebug"
+		"workspaceContains:pubspec.yaml",
+		"workspaceContains:*/pubspec.yaml",
+		"workspaceContains:*/*/pubspec.yaml",
+		"workspaceContains:*.dart",
+		"workspaceContains:*/*.dart",
+		"workspaceContains:*/*/*.dart",
+		"workspaceContains:dart.sh.create",
+		"workspaceContains:dart.create",
+		"workspaceContains:flutter.sh.create",
+		"workspaceContains:flutter.create",
+		"onCommand:_dart.flutter.createSampleProject",
+		"onTaskType:dart",
+		"onTaskType:flutter",
+		"onUri",
+		"onDebugDynamicConfigurations"
 	],
   "main": "./dist/extension.js",
   "contributes": {
