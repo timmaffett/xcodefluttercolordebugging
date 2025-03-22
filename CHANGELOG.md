@@ -1,5 +1,11 @@
 # Change Log for XCode Flutter Color Debugging Extension (xcodefluttercolordebugging)
 
+## [1.0.6]
+
+- Add the assets directory to .vscodeignore so the image files are excluded entirely from the extension distribution.  The
+  README.md file references the images of the github repo directly - there was never any reason to include them in the
+  distribution.
+
 ## [1.0.5]
 
 - Revert back to my original package.json activationEvents - I didn't think through "onDebug" only all the way
