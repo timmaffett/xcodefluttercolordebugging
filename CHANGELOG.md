@@ -4,6 +4,7 @@
 
 - Revert back to my original package.json activationEvents - I didn't think through "onDebug" only all the way
   as the extension does not get invoked when running without debugging.
+- Change to webp lossless format from png for the 3 images - Reduced size of entire extension by ~75%
 
 ## [1.0.4]
 
