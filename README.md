@@ -9,11 +9,11 @@ where ESC sequences are found, which makes using ANSI styled output from within 
 
 > With this extension installed and the use of the [ChalkDart](https://pub.dev/packages/chalkdart) you can enjoy full color messages/console logging from within your Flutter app, EVEN when debugging via XCode.
 
-![Color debug console messages via XCode WITH this extension](https://raw.githubusercontent.com/timmaffett/xcodefluttercolordebugging/refs/heads/main/assets/with_xcodefluttercolordebugging.png)
+![Color debug console messages via XCode WITH this extension](https://raw.githubusercontent.com/timmaffett/xcodefluttercolordebugging/refs/heads/main/assets/with_xcodefluttercolordebugging.webp)
 
 > When debugging a Flutter app via XCode WITHOUT this extension you would just see something like the following, raw broken ansi sequences AND *truncated* messages, anytime you attempt to output color:
 
-![Broken debug console messages via XCode without this extension](https://raw.githubusercontent.com/timmaffett/xcodefluttercolordebugging/refs/heads/main/assets/without_xcodefluttercolordebugging.png)
+![Broken debug console messages via XCode without this extension](https://raw.githubusercontent.com/timmaffett/xcodefluttercolordebugging/refs/heads/main/assets/without_xcodefluttercolordebugging.webp)
 
 This extension allows you to enjoy the power of colorized and styled debug logging from your Flutter app running or debugged from within VSCode via XCode.
 

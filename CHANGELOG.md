@@ -3,6 +3,7 @@
 ## [1.0.3]
 
 - Improve icon
+
 - package.json tuning: add bugs, badges sections, and fix galleryBanner, change activationEvents to only "onDebug"
 
 ## [1.0.2]
