@@ -1,13 +1,14 @@
 # XCode Flutter Color Debugging README
 
-This extension adds support for using ANSI escape sequences from a Flutter application running within the VSCode debug environment via execution of the Flutter application using XCode.
+This extension adds support for allowing ANSI escape sequences from a Flutter application, running/debugging within the VSCode debug environment,
+when the execution of the Flutter application is done via XCode.
 
-XCode normally strips all ESC sequences from messages, and additionally truncates any messages
+XCode normally strips all ESC sequences from print()/debugPrint() messages, and additionally truncates any messages
 where ESC sequences are found, which makes using ANSI styled output from within XCode impossible.
 
 ## Features
 
-> With this extension installed and the use of the [ChalkDart](https://pub.dev/packages/chalkdart) you can enjoy full color messages/console logging from within your Flutter app, EVEN when debugging via XCode.
+> With this extension installed and the use of the [ChalkDart](https://pub.dev/packages/chalkdart) you can enjoy full color messages/console printing from within your Flutter app, EVEN when running/debugging via XCode.
 
 ![Color debug console messages via XCode WITH this extension](https://raw.githubusercontent.com/timmaffett/xcodefluttercolordebugging/refs/heads/main/assets/with_xcodefluttercolordebugging.webp)
 
@@ -15,7 +16,7 @@ where ESC sequences are found, which makes using ANSI styled output from within 
 
 ![Broken debug console messages via XCode without this extension](https://raw.githubusercontent.com/timmaffett/xcodefluttercolordebugging/refs/heads/main/assets/without_xcodefluttercolordebugging.webp)
 
-This extension allows you to enjoy the power of colorized and styled debug logging from your Flutter app running or debugged from within VSCode via XCode.
+This extension allows you to enjoy the power of colorized and styled printing from your Flutter app running or debugged from within VSCode via XCode.
 
 ## Requirements
 
